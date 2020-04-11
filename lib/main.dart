@@ -4,6 +4,19 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(new MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: new Text('Hello, Flutter'),
+    home: new Scaffold(
+      appBar: new AppBar(title: Text('App title')),
+      body: new Center(
+        child: new Column(
+          children: [
+            new Text('Hello, Flutter'),
+            new FlatButton(
+              onPressed: (){}, 
+              child: new Text('Button'),
+              )
+          ]
+        )
+      ),
+    ),
   ));
 }
