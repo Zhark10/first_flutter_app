@@ -1,5 +1,6 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:my_first_flutter/widgets/news.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class MyBody extends StatelessWidget {
@@ -31,7 +32,10 @@ void main() {
     debugShowCheckedModeBanner: false,
     home: new Scaffold(
       appBar: new AppBar(title: Text('App title')),
-      body: new MyBody(),
+      // body: new MyBody(),
+      body: new NewsBox('Наменование первого поста',
+          'Тут должен быть написан какой-то интересный текст, но у меня нет времени его предумывать, так что я дико извиняюсь, что тебе приходится читать эту хрень',
+          imageurl: 'https://sun9-3.userapi.com/c852232/v852232624/1b8c10/Zy6qziPSQqU.jpg',),
     ),
   ));
 }
