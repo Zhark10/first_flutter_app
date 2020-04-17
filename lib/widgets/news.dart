@@ -18,8 +18,11 @@ class NewsBox extends StatelessWidget {
         padding: new EdgeInsets.all(8),
         child: new Row(
           children: <Widget>[
-            new Image.network(_imageurl,
-                width: 100.0, height: 100.0, fit: BoxFit.cover),
+            new Container(
+              padding: new EdgeInsets.all(8),
+              child: new Image.network(_imageurl,
+                  width: 100.0, height: 100.0, fit: BoxFit.cover),
+            ),
             new Expanded(
                 child: new Container(
                     padding: new EdgeInsets.all(8),

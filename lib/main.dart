@@ -30,6 +30,7 @@ class MyBody extends StatelessWidget {
 void main() {
   runApp(new MaterialApp(
     debugShowCheckedModeBanner: false,
+    theme: ThemeData(fontFamily: 'Circe'),
     home: new Scaffold(
       appBar: new AppBar(title: Text('App title')),
       // body: new MyBody(),
